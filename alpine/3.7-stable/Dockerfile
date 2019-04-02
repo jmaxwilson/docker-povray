@@ -13,7 +13,6 @@ FROM alpine:latest
 # Because some branches of the code uses a non standard uint instead of unsigned int
 #   we use a hack to make sure that it can still compile in alpine linux 
 # Cleanup: remove the source code now that povray has been compiled
-s
 # Create the source directory to be the WORKDIR during execution
 # Create the output directory to allow output to go to a different directory
 RUN apk add --update --no-cache \
