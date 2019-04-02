@@ -34,7 +34,7 @@ RUN apk add --update --no-cache \
 	cd /povray/unix && \
 	./prebuild.sh && \
 	cd /povray && \
-	./configure COMPILED_BY="Docker\n jmaxwilson/povray:3.7-stable\n https://cloud.docker.com/repository/docker/jmaxwilson/povray" && \
+	./configure COMPILED_BY="Docker\n jmaxwilson/povray:3.8-alpha\n https://cloud.docker.com/repository/docker/jmaxwilson/povray" && \
 	echo "typedef unsigned int uint;" > uint-hack.h && \
 	make CPPFLAGS="-include uint-hack.h" && \
 	make install && \
