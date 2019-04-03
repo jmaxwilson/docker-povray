@@ -2,7 +2,7 @@
 
 The [Persistence of Vision Raytracer](http://povray.org) is a high-quality, free software tool for creating three-dimensional graphics by using a Scene Description Language.
 
-You can use these [docker images](https://cloud.docker.com/repository/docker/jmaxwilson/povray) to run POV-Ray as a Docker container.
+You can use these [docker images](https://hub.docker.com/r/jmaxwilson/povray) to run POV-Ray as a Docker container.
 
 ## POV-Ray Docker Images
 
