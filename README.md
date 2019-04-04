@@ -2,16 +2,19 @@
 
 The [Persistence of Vision Raytracer](http://povray.org) is a high-quality, free software tool for creating three-dimensional graphics by using a Scene Description Language.
 
-You can use these [docker images](https://hub.docker.com/r/jmaxwilson/povray) to run POV-Ray as a Docker container.
+You can use these [POV-Ray Docker images](https://hub.docker.com/r/jmaxwilson/povray) to run POV-Ray as a Docker container.
+
+The images have been optimized to be *significantly smaller* than other POV-Ray docker images available.
 
 ## POV-Ray Docker Images
 
-|Image:Tags| Version | Base |
-|--|--|--|
-| jmaxwilson/povray| POV-Ray Latest Stable (3.7 Stable) | alpine |
-| jmaxwilson/povray:3.7-stable | POV-Ray 3.7 Stable | alpine |
-| jmaxwilson/povray:3.8-alpha | POV-Ray 3.8 Alpha | alpine |
-| jmaxwilson/povray:ubuntu | POV-Ray Binary from Official Ubuntu/Debian Package| ubuntu |
+|Image:Tags| POV-Ray Version | Size | Base |
+|--|--|--|--|
+| jmaxwilson/povray | POV-Ray Latest Stable (3.7 Stable) | ≈50MB | alpine |
+| jmaxwilson/povray:3.7-stable | POV-Ray 3.7 Stable | ≈50MB | alpine |
+| jmaxwilson/povray:3.8-alpha | POV-Ray 3.8 Alpha | ≈37MB | alpine |
+| jmaxwilson/povray:ubuntu | POV-Ray Binary from Official Ubuntu/Debian Package | ≈144MB | ubuntu |
+
 
 ## POV-Ray for Visual Studio Code
 
