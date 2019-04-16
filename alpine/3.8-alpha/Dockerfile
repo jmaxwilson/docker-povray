@@ -27,7 +27,9 @@ RUN apk add --update --no-cache \
 	zlib-dev \
 	libpng-dev \
 	tiff-dev \
-	sdl-dev && \
+	sdl-dev \
+	ilmbase-dev \
+	openexr-dev && \
 	git clone https://github.com/POV-Ray/povray.git && \
 	cd /povray && \
 	git checkout release/v3.8.0 && \
@@ -36,7 +38,7 @@ RUN apk add --update --no-cache \
 	cd /povray && \
 	./configure COMPILED_BY="Docker\n jmaxwilson/povray:3.8-alpha\n https://cloud.docker.com/repository/docker/jmaxwilson/povray" && \
 	echo "typedef unsigned int uint;" > uint-hack.h && \
-	make CPPFLAGS="-include uint-hack.h" && \
+	make CPPFLAGS="-include uint-hack.h -I/usr/include/OpenEXR" && \
 	make install && \
 	cd / && \
 	rm -rf /povray && \
@@ -52,13 +54,17 @@ RUN apk add --update --no-cache \
 	zlib-dev \
 	libpng-dev \
 	tiff-dev \
-	sdl-dev && \
+	sdl-dev \
+	ilmbase-dev \
+	openexr-dev && \
 	apk add --no-cache \
 	boost \
 	zlib \
 	libpng \
 	tiff \
-	sdl && \
+	sdl \
+	ilmbase \
+	openexr && \
 	rm -rf /var/cache/apk* && \
 	mkdir /source && \
 	mkdir /output
