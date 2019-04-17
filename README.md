@@ -10,11 +10,10 @@ The images have been optimized to be *significantly smaller* than other POV-Ray 
 
 |Image:Tags| POV-Ray Version | Size | Base |
 |--|--|--|--|
-| jmaxwilson/povray | POV-Ray Latest Stable (3.7 Stable) | ≈50MB | alpine |
-| jmaxwilson/povray:3.7-stable | POV-Ray 3.7 Stable | ≈50MB | alpine |
-| jmaxwilson/povray:3.8-alpha | POV-Ray 3.8 Alpha | ≈37MB | alpine |
+| jmaxwilson/povray | POV-Ray Latest Stable (3.7 Stable) | ≈25MB | alpine |
+| jmaxwilson/povray:3.7-stable | POV-Ray 3.7 Stable | ≈25MB | alpine |
+| jmaxwilson/povray:3.8-alpha | POV-Ray 3.8 Alpha | ≈25MB | alpine |
 | jmaxwilson/povray:ubuntu | POV-Ray Binary from Official Ubuntu/Debian Package | ≈144MB | ubuntu |
-
 
 ## POV-Ray for Visual Studio Code
 

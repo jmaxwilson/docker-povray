@@ -42,6 +42,7 @@ RUN apk add --update --no-cache \
 	cd / && \
 	rm -rf /povray && \
 	rm -rf /usr/local/share/doc/povray-3.7 && \
+	rm -rf /usr/local/share/povray-3.7/scenes && \
 	apk del \
 	git \
 	coreutils \
